@@ -66,7 +66,7 @@ def process_file(filename):
 def main():
     """ Main function """
 
-    for filename in ['newzealand.csv', 'paris.csv']
+    for filename in ['newzealand.csv', 'paris.csv']:
         process_file(filename)
 
 
