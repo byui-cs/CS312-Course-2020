@@ -54,12 +54,20 @@ month,year,temp
 9,1753,59.7434
 """
 
+import matplotlib.pyplot as plt
 import numpy as np
+
+
+def process_file(filename):
+    """ Create the three plots """
+    pass
 
 
 def main():
     """ Main function """
-    pass
+
+    for filename in ['newzealand.csv', 'paris.csv']
+        process_file(filename)
 
 
 if __name__ == "__main__":
