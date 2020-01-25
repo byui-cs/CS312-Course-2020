@@ -15,65 +15,46 @@ Instructions:
 - You a free to use any images for the function below (except task 5)
   - Download images from the Internet
   - Use your own photos
-- You must download "usa.png" from the GitHub repo for task 5
+- You must download "temple.jpg" and "usa.png" from the GitHub repo for task 5
 
 """
 import numpy as np
 import cv2
 
 
-
-def task1():
+def task1(file):
     """ task1: load and display an image """
     print('Task 1')
 
 
 
-def task2():
+def task2(file):
     """ Task2: Open image and flip left <-> right """
-
-    # 1) Try doing this task using loops and just the numpy array once you load the image
-
-    # 2) Use OpenCV function(s)
-
     print('Task 2')
 
 
 
-def task3():
+def task3(file):
     """ Task3: Open image and flip up <-> down """
-
-    # 1) Try doing this task using loops and just the numpy array once you load the image
-
-    # 2) Use OpenCV function(s)
-
     print('Task 3')
 
 
 
-def task4():
+def task4(file):
     """ Task4: Resample image down 50% """
-
-    # Do this task using loops and just the numpy array once you load the image
-
     print('Task 4')
 
 
 
 def task5():
     """ Task5: Tile a small image into a larger one """
-
-    # load 'usa.png' and create a large 400 x 600 tiled image
-
     print('Task 5')
 
 
 
 def task6():
     """ Task6: EXTRA - Tile a small image into a larger one like a brick wall """
-
-    # load 'usa.png' and create a large 400 x 600 tiled image
-
+    # load file and create a large 400 x 600 tiled image
     print('Task 6')
 
 
@@ -81,14 +62,15 @@ def task6():
 def main():
     """ Main function """
 
-    task1()
-    task2()
-    task3()
-    task4()
+    # Main image file to use for the first 4 tasks
+    file = 'temple.jpg'
+
+    task1(file)
+    task2(file)
+    task3(file)
+    task4(file)
     task5()
     task6()
-
-
 
 
 if __name__ == "__main__":
