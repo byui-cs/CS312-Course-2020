@@ -161,7 +161,7 @@ class Tests:
 
         # Read some pixels from the src image
         src_image = cv2.imread(src)
-        if (src_image == None):
+        if (src_image is None):
             self.failed(test, 'None was returned')
             return
 
@@ -209,7 +209,7 @@ class Tests:
 
         # Read some pixels from the src image
         src_image = cv2.imread(src)
-        if (src_image == None):
+        if (src_image is None):
             self.failed(test, 'None was returned')
             return
 
