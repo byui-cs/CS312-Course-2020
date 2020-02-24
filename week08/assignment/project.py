@@ -37,7 +37,7 @@ def drawMatches(image_1, image_1_keypoints, image_2, image_2_keypoints, matches)
     # separate the two images)
     joined_image = np.zeros((max(image_1.shape[0], image_2.shape[0]),
                             image_1.shape[1] + image_2.shape[1] + margin,
-                            3))
+                            3), dtype=np.uint8)
     if num_channels == 1:
         for channel_idx in range(3):
             joined_image[:image_1.shape[0],
@@ -91,6 +91,10 @@ def findMatchesBetweenImages(image_1, image_2, nf=500, sf=1.2, wta=2, st=cv2.ORB
 
 # --------------------------------------------------------------------------
 def main():
+    # TODO Load images
+    # TODO Call findMatchesBetweenImages
+    # TODO Call drawMatches
+    # TODO save resulting image (In order to add to the project document)
     pass
 
 
